@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/><!-- 익스 플로러 전화번호 자동 링크 -->
+    <title>하나은행비대면</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+
+    
+</head>
+
+<body>
+<!-- wrap-->
+<div id="wrap">
+    <!-- header -->
+    <header id="header">헤더영역</header>
+    <!-- // header -->
+
+    <!-- container -->
+    <div id="container">
+        <div id="contents">
+            <!-- 컨텐츠 영역 -->
+            <div class="reqeust-wrap">
+                
+                <!-- 상단 텍스트 -->
+                <div class="top-txt-area01">
+                    <p class="txt-type01">매월 급여일은<span>언제인가요?</span></p>
+                </div>
+                <!-- // 상단 텍스트 -->
+
+                <!-- 급여일 선택 -->
+                <div class="sel-area01">
+                    <div class="input-area">
+                        <div class="field">
+                            <label class="label type02" for="name01">급여일 선택</label>
+                            <div class="inputFake type02">
+                                <button class="selectBtn sp-icon-a">급여일 선택</button>
+                            </div>
+                        </div>
+                        <!-- // field -->
+                    </div>
+                    <!-- // input-area -->
+                </div>
+                <!-- // 급여일 선택 -->
+
+                <!-- 버튼 -->
+                <div class="btn-wrap">
+                    <button class="btn" type="button">다음</button>
+                </div>
+                <!-- 버튼 -->
+
+            </div>
+            <!-- // 컨텐츠 영역 -->
+        </div>
+        <!-- // contents -->
+    </div>
+    <!-- container -->
+
+</div>
+<!-- wrap -->
+
+<!-- 셀렉트 팝업 영역 -->
+<div id="open-popup">
+    <!-- 급여일 선택 -->
+    <div class="field-wrap">
+        <div class="field-area">
+            <div class="title">매월 급여일이 언제인가요?</div>
+
+            <div class="pay-sel-wrap01">
+                <ul>
+                    <li><button class="btn-small-type02">10일</button></li>
+                    <li><button class="btn-small-type02">15일</button></li>
+                    <li><button class="btn-small-type02">30일</button></li>
+                    <li><button class="btn-small-type02">없음</button></li>
+                </ul>
+            </div>
+
+            <!-- 컨텐츠 내용 -->
+            <div class="field">
+                <ul>
+                    <li>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">18일</div>
+                                <div class="swiper-slide">19일</div>
+                                <div class="swiper-slide">20일</div>
+                                <div class="swiper-slide">21일</div>
+                                <div class="swiper-slide">22일</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- // 컨텐츠 내용 -->
+
+            <div class="btn-area">
+                <button class="btnClose" type="button">선택</button>
+            </div>
+        </div>
+    </div>
+    <!-- // 급여일 선택 -->
+
+    <div class="dummyDimmy"></div>
+</div>
+<!-- // 셀렉트 팝업 영역 -->
+
+<!-- 레이어 팝업 영역 -->
+<div class="popup-area layer-popup01" id="popup01" style="display:block"><!-- 개발 시 스타일 삭제 요청 (화면 확인용)-->
+    <div class="popup">
+        <!-- 컨텐츠 -->
+        <div class="content">
+            <p class="pop-txt01">입출금 통장 이용한도 안내</p>
+            <p class="pop-txt02">금융사고 방지를 위해<span>입출금통장은 아래와 같이 제한됩니다.</span></p>
+            
+            <div class="pop-txt-list01">
+                <ul>
+                    <li><span>영업점 출금/이체</span><strong>100만원/일(합산)</strong></li>
+                    <li><span>ATM출금/이체</span><strong>100만원/일(각각)</strong></li>
+                    <li><span>전자금융이체</span><strong>100만원/일</strong></li>
+                </ul>
+            </div>
+
+            <div class="list-type02">
+                <p class="list-tit">이용한도제한 해제방법</p>
+                <ul class="list-dot">
+                    <li>영업점 방문 후 증빙서류 제출(방문 전 사전문의)</li>
+                    <li>대출실행(비대면 입출금통장 연계)</li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- // 컨텐츠 -->
+
+        <!-- 버튼 -->
+        <div class="pop-btnwrap"> 
+            <button type="button" class="btn-pop colorBlue">확인</button>    
+        </div>
+        <!-- // 버튼 -->
+
+    </div>
+    <!-- // popup -->
+    <div class="dummyDimmy" style="display:block"></div><!-- 개발 시 스타일 삭제 요청 (화면 확인용)-->
+</div>
+<!-- //레이어 팝업 영역 -->
+
+
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common_ui.js"></script>
+</body>
+</html>

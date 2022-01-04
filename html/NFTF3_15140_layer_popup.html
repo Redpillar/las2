@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/><!-- 익스 플로러 전화번호 자동 링크 -->
+    <title>하나은행비대면</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+
+    
+</head>
+
+<body>
+<!-- wrap-->
+<div id="wrap">
+    <!-- header -->
+    <header id="header">헤더영역</header>
+    <!-- // header -->
+
+    <!-- container -->
+    <div id="container">
+        <div id="contents">
+            <!-- 컨텐츠 영역 -->
+            <div class="reqeust-wrap">
+                
+                <!-- 상단 텍스트 -->
+                <div class="top-txt-area01">
+                    <p class="txt-type01">체크카드도 함께<span>신청하실래요?</span></p>
+                </div>
+                <!-- // 상단 텍스트 -->
+
+                <!-- 라디오 영역 -->
+                <div class="select-area01">
+                    <div class="rdobox-wrap">
+
+                        <div class="rdobox01">
+                            <input type="radio" id="rdobox01" name="rdobox01">
+                            <label for="rdobox01">예, 체크카드를 신청할게요.</label> 
+                        </div>
+
+                        <div class="rdobox01">
+                            <input type="radio" id="rdobox02" name="rdobox01">
+                            <label for="rdobox02">아니오, 신청하지 않을게요.</label> 
+                        </div>
+
+                    </div>
+                    <!-- // rdobox-wrap -->
+                </div>
+                <!-- // 라디오 영역 -->
+
+                <!-- 버튼 -->
+                <div class="btn-wrap">
+                    <button class="btn" type="button">다음</button>
+                </div>
+                <!-- 버튼 -->
+
+            </div>
+            <!-- // 컨텐츠 영역 -->
+        </div>
+        <!-- // contents -->
+    </div>
+    <!-- // container -->
+
+</div>
+<!-- // wrap -->
+
+<!-- 레이어 팝업 영역 -->
+<div class="popup-area layer-popup01" id="popup01" style="display:block"><!-- 개발 시 스타일 삭제 요청 (화면 확인용)-->
+    <div class="popup">
+        <!-- 컨텐츠 -->
+        <div class="content">
+            <p class="pop-txt01">체크카드 동의사항</p>
+
+            <div class="list-type02">
+                <ul class="list-dot">
+                    <li>주민등록증/운전면허증 소지자에 한하여 체크카드 신청이 가능합니다. 이외 신분증 제출 시 체크카드 신청이 취소됩니다.</li>
+                    <li>체크카드 신청서에 작성하는 정보는 하나카드사에 등록/수정 됩니다.<span class="txt-br">※ 문의: 하나카드 콜센터 1800-1111</span></li>
+                    <li>손님의 본인확인정보, 신분증 정보, 주소, 전화번호 등 필수정보를 하나카드사에 제공(상호공유 포함)하는데 동의해야 체크카드 신청이 가능합니다.</li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- // 컨텐츠 -->
+
+        <!-- 버튼 -->
+        <div class="pop-btnwrap"> 
+            <button type="button" class="btn-pop colorBlue">동의합니다</button>    
+        </div>
+        <!-- // 버튼 -->
+
+        <!-- 팝업 닫기 버튼 -->
+        <button type="button" class="sp-icon-a btn-close closeBtn">
+            <span class="blind">닫기</span>
+        </button>
+        <!-- // 팝업 닫기 버튼 -->
+
+    </div>
+    <!-- // popup -->
+    <div class="dummyDimmy" style="display:block"></div><!-- 개발 시 스타일 삭제 요청 (화면 확인용)-->
+</div>
+<!-- //레이어 팝업 영역 -->
+
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common_ui.js"></script>
+</body>
+</html>

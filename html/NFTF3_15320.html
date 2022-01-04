@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAS</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+</head>
+
+<body>
+<!-- wrap-->
+<div id="wrap">
+    <!-- header -->
+    <header id="header">헤더영역</header>
+    <!-- // header -->
+
+    <!-- container -->
+    <div id="container">
+        <div id="contents">
+            <!-- 컨텐츠 영역 -->
+            <div class="info-wrap">
+                <div class="top-txt-area01">
+                    <p class="txt-type01">신규 가입금액은<span>어느 정도로 할까요?</span></p>
+                </div>
+
+                <div class="info-cont">
+
+                    <!-- 금액 -->
+                    <div class="input-area">
+                        <!-- 인풋박스 -->
+                        <div class="field"><!-- [D] 클래스 error ]-->
+                            <label class="label" for="name01">신규가입금액</label>
+                            <div class="input">
+                                <input class="money" id="name01" type="text" data-text="10만원 이상 100만원 이하로 가입" placeholder="신규가입금액" />
+                                <div class="sum-wrap">
+                                    <strong>원</strong>
+                                </div>
+                            </div>
+                            <!-- [D] 오류 메세지 -->
+                            <!-- <p class="error-txt">가입금액은 1만원 이상으로 입력하셔야 합니다.</p> -->
+                            <p class="info-txt">* 2만원 이상, 50만원 이하로 가입할 수 있습니다.</p>
+                            <!-- // [D] 오류 메세지 -->
+                        </div>
+                        <!-- // 인풋박스 -->
+                    </div>
+                    <!-- // 금액 -->
+
+                    <div class="chk-option-wrap">
+                        <div class="chk-option">
+                            <input type="checkbox" name="" id="chk-option01">
+                            <label for="chk-option01">추천인 우대번호를 입력하겠습니다.(선택)</label>
+                        </div>
+                        <div class="sub-box">
+                             <!-- 입력 영역 -->
+                             
+                            <div class="input-area no-margin">
+                                <div class="field">
+                                    <div class="input">
+                                        <input class="" id="name02" type="text" data-text="인풋박스 타입sadfasdf 2" placeholder="인풋박스 타입 2" />
+                                        <div class="btn-wrap">
+                                            <button class="sp-icon btnDel" type="button"><span class="blind">삭제</span></button>
+                                            <!-- <button class="btn-small-type03">버튼이름</button> -->
+                                        </div>
+                                    </div>
+                                    <!-- 스크래핑 실패시 : 에러문구  -->
+                                    <p class="info-txt">
+                                        추천인 우대번호 입력 시, 고객님과 추천하신 분에게 연 0.3% 우대금리를 제공합니다.<br>
+                                        (친구추천 우대는 계좌 별 1회, 0.3%까지만 적용)
+                                    </p>
+                                    <!-- // 스크래핑 실패시 : 에러문구  -->
+                                </div>
+                            </div>
+                            <!-- // 입력 영역 -->
+                        </div>
+                    </div>
+                    <!-- // chk-option-wrap -->
+
+                </div>
+                <!-- // info-address -->
+
+            </div>
+            <!-- // info-wrap -->
+            <!-- // 컨텐츠 영역 -->
+        </div>
+        <!-- // contents -->
+        
+    </div>
+    <!-- container -->
+
+    <!-- 버튼 영역 -->
+
+    <!-- // 버튼 영역 -->
+
+</div>
+<!-- wrap -->
+
+<!-- 팝업 -->
+<div id="open-popup">
+    <div class="field-wrap">
+        <div class="field-area">
+            <div class="title">지역번호를 선택해주세요.</div>
+            <!-- 지역번호 선택 리스트 -->
+            <div class="field">
+                <ul>
+                    <li>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">02</div>
+                                    <div class="swiper-slide">031</div>
+                                    <div class="swiper-slide">032</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- // 지역번호 선택 리스트 -->
+            <div class="btn-area">
+                <button class="btnClose" type="button">선택</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="dummyDimmy"></div>
+</div>
+<!-- // 팝업 -->
+
+<!-- 스크립트 영역 -->
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common_ui.js"></script>
+<!-- 스크립트 영역 -->
+
+<script>
+    $(document).ready(function(){
+
+        $(".chk-option input").click(function(){
+            if($(this).is(":checked") == true){
+                $(this).parent().siblings(".sub-box").slideDown();
+            } else {
+                $(this).parent().siblings(".sub-box").slideUp();
+            }
+        });
+
+    });
+</script>
+
+</body>
+</html>

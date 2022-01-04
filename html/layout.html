@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/><!-- 익스 플로러 전화번호 자동 링크 -->
+    <title>하나은행비대면</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/common.css"> -->
+	<style type="text/css">
+		html,body{position:relative; height:100%; overflow:hidden; background:blue;}
+		*{padding:0; margin:0;}
+		
+		.d{position:relative; height:100%; transition:all ease 0.5s;}
+		html.key1 .d{height:calc(100% - 242px);}/*안드로이드인 경우*/
+		html.key2 .d{height:calc(100% - 242px);}/*IOS인 경우*/
+		.wrap{position:absolute; top:0px; bottom:0px; width:100%; background:red;}
+		button{position:absolute; bottom:0; left:0; width:100%; height:30px;}
+	</style>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+            var UserAgent = navigator.platform.toLowerCase();
+            
+            if(UserAgent == "iphone"){
+                var sw = false;
+                $("input").focus(function(e){
+                    sw = true;
+                    setTimeout(function(){
+                        sw = false;
+                    },100);
+                    e.stopPropagation();
+                    $("html").addClass("key2");
+                }).blur(function(){
+                    $("html").removeClass("key2");
+                });
+                $(window).scroll(function(){
+                    if(sw) return;
+                    $("html").removeClass("key2");
+                    $("input").blur();
+                });
+            }else{
+                var sw = false;
+                $("input").focus(function(e){
+                    sw = true;
+                    setTimeout(function(){
+                        sw = false;
+                    },100);
+                    e.stopPropagation();
+                    $("html").addClass("key1");
+                }).blur(function(){
+                    $("html").removeClass("key1");
+                });
+                $(window).scroll(function(){
+                    if(sw) return;
+                    $("html").removeClass("key1");
+                    $("input").blur();
+                });
+                   
+            };
+            var u = navigator.userAgent.toLowerCase();
+            $("body").prepend("<div style='position:fixed;top:0;right:0;z-index:100;height:10px;text-align:center;'>"+u+"</div>");
+		});
+	</script>
+</head>
+<body>
+	<div class="d">
+        <div class="wrap">
+            <main id="main">
+                <input type="text" />
+                <section></section>
+    
+                <div class="btn-area">
+                    <button>버튼</button>
+                </div>
+            </main>
+			
+		</div>
+	</div>
+</body>
+</html>

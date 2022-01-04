@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAS</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+</head>
+
+<body>
+<!-- wrap-->
+<div id="wrap">
+    <!-- header -->
+    <header id="header">헤더영역</header>
+    <!-- // header -->
+
+    <!-- container -->
+    <div id="container">
+        <div id="contents">
+            <!-- 컨텐츠 영역 -->
+            <div class="certi-wrap">
+
+                <!-- Navigator -->
+                <div class="navi-dot">
+                    <span>Step 1</span>
+                    <span class="active">Step 2</span>
+                </div>
+                <!-- // Navigator -->
+
+                <!-- 텍스트 영영 -->
+                <div class="personal-num-top">
+                    <p class="certi-name">이한아님</p>
+                    <p class="txt-type01">본인인증 후 안전하게<span>도와드릴게요 :)</span> </p>
+                </div>
+                <!-- / 텍스트 영역 -->
+
+                <!-- 휴대폰 인증 영역 -->
+                <div class="phone-certi-area">
+                    <!-- 약관 -->
+                    <div class="chkbox01">
+                        <input type="checkbox" id="chkbox01" name="chkbox01"><label for="chkbox01">휴대폰인증 이용약관 동의</label>
+                        <a href="javscript:;" class="btn-detail01">상세보기</a>
+                    </div>
+                    <!-- // 약관 -->
+
+                    <!-- 입력 영역 -->
+                    <div id="inputAction" class="input-area">
+                        <div class="field">
+                            <label class="label" for="name03">휴대폰 번호</label>
+                            <div class="input inputFake tel">
+                                <button id="" class="selectBtn sp-icon-a">통신사</button>
+                                <input class="" id="name03" type="text" placeholder="휴대폰 번호" />
+                                <div class="btn-wrap">
+                                    <button class="sp-icon btnDel" type="button"><span class="blind">삭제</span></button>
+                                </div>
+                            </div>
+
+                            <!-- 스크래핑 실패시 : 에러문구  -->
+                            <p class="error-txt">에러메시지</p>
+                            <!-- // 스크래핑 실패시 : 에러문구  -->
+                        </div>
+                    </div>
+                    <!-- // 입력 영역 -->
+                </div>
+                <!-- // 휴대폰 인증 영역 -->
+
+            </div>
+            <!-- // 컨텐츠 영역 -->
+        </div>
+        <!-- // contents -->
+
+    </div>
+    <!-- container -->
+
+    <!-- 버튼 영역 -->
+
+    <!-- // 버튼 영역 -->
+
+    <!-- 통신사 선택 팝업 -->
+    <div id="open-popup">
+        <div class="field-wrap">
+            <div class="field-area">
+                <div class="title">통신사를 선택하세요.</div>
+                <!-- 통신사 선택 리스트 -->
+                <div class="field">
+                    <ul>
+                        <li>
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">SKT</div>
+                                     <div class="swiper-slide">KT</div>
+                                     <div class="swiper-slide">SKT(알뜰폰)</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // 통신사 선택 리스트 -->
+                <div class="btn-area">
+                    <button class="btnClose" type="button">선택</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="dummyDimmy"></div>
+    </div>
+    <!-- // 통신사 선택 팝업 -->
+</div>
+<!-- wrap -->
+
+<!-- 스크립트 영역 -->
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common_ui.js"></script>
+<!-- 스크립트 영역 -->
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAS</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+</head>
+
+<body>
+<!-- wrap-->
+<div id="wrap">
+    <!-- header -->
+    <header id="header">
+        <!-- 상단 네비게이터 -->
+        <div id="" class="navigator"><!-- inputAction 아이디 추가시 애니작동 -->
+            <button type="button" class="prev sp-icon-a"><span>뒤로가기</span></button>
+            <div class="list">
+                <ul>
+                    <li>동의</li>
+                    <li>기본</li>
+                    <li class="on">신청서</li>
+                    <li>인증</li>
+                </ul>
+            </div>
+            <button type="button" class="menu sp-icon-a"><span>메뉴</span></button>
+        </div>
+        <!-- // 상단 네비게이터 -->
+    </header>
+    <!-- // header -->
+
+    <!-- container -->
+    <div id="container">
+        <div id="contents">
+            <!-- 컨텐츠 영역 -->
+            <div class="agree-wrap">
+                <div class="top-txt-area01">
+                    <p class="txt-type01">자동해지 시점을<span>지정해주세요.</span></p>
+                </div>
+                <div class="sel-area01">
+                    <div id="textAction" class="rdobox-wrap"><!-- id 값 textAction 추가시 하단의 txt 출력 없을시 txt값 제거 -->
+                        <div class="rdobox01">
+                            <input type="radio" id="rdobox01" name="rdobox01"><label for="rdobox01">만기일에 자동해지합니다.</label>
+                        </div>
+                        <!-- <p class="txt">신규 가입하는 입출금통장으로 입금됨</p> -->
+                        <div class="rdobox01">
+                            <input type="radio" id="rdobox02" name="rdobox01"><label for="rdobox02">이연만기일에 자동해지합니다.</label>
+                        </div>
+                        <!-- <p class="txt">신규 가입하는 입출금통장으로 입금됨</p> -->
+                    </div>
+                </div>
+                <!-- //  step-top01 -->
+                <div class="list-type01">
+                    <p class="list-tit">이용안내</p>
+                    <ul class="list-dot">
+                        <li>이연만기일은 정액(정기)적립식 적금의 월 저축금을 약정일보다 늦게 납입하는 경우 만기일이 늦춰지는 것을 이연(지연)되었다고 하며, 이연된 일수만큼 연장된 만기일이 이연만기일입니다.</li>
+                        <li>이연(지연)이 발생한 경우 이연만기일에 해지하시면 원래 약정된 계약금액을 수령하실 수 있습니다.(월부금 완납계좌에 한함)</li>
+                        <li>납입이 지연(이연)된 적금을 신규 시 지정한 만기일에 해지할 경우 지연이자(순지연일수X월부금납입지연금리)를 계약금액에서 공제한 후 지급합니다.</li>
+                        <li>이연만기일에 대한 추가 문의사항은 KEB하나은행 콜센터(1588-1111)로 문의해 주시기 바랍니다.</li>
+                    </ul>
+                </div>
+                <!-- 버튼 -->
+                <div class="btn-wrap">
+                    <button class="btn" type="button">다음</button>
+                </div>
+                <!-- 버튼 -->
+
+            </div>
+            <!-- // 컨텐츠 영역 -->
+        </div>
+        <!-- // contents -->
+
+    </div>
+    <!-- container -->
+
+    <!-- 버튼 영역 -->
+
+    <!-- // 버튼 영역 -->
+</div>
+<!-- wrap -->
+<!-- 셀렉트 팝업 -->
+<div id="open-popup">
+    <!-- 셀렉트 팝업 -->
+    <div class="field-wrap">
+        <div class="field-area">
+            <div class="title">출금 계좌를 선택하세요.</div>
+            <!-- 컨텐츠 내용 -->
+            <div class="field">
+                <ul>
+                    <li>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">101-123456-11111</div>
+                                <div class="swiper-slide">101-123456-11111</div>
+                                <div class="swiper-slide">101-123456-11111</div>
+                                <div class="swiper-slide">101-123456-11111</div>
+                                <div class="swiper-slide">101-123456-11111</div>
+                                <div class="swiper-slide">101-123456-11111</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- // 컨텐츠 내용 -->
+            <div class="btn-area">
+                <button class="btnClose" type="button">선택</button>
+            </div>
+        </div>
+    </div>
+    <!-- // 셀렉트 팝업 -->
+    <!-- 딤드 -->
+    <div class="dummyDimmy"></div>
+    <!-- // 딤드 -->
+</div>
+<!-- 스크립트 영역 -->
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common_ui.js"></script>
+<!-- 스크립트 영역 -->
+
+</body>
+</html>

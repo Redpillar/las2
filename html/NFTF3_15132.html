@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/><!-- 익스 플로러 전화번호 자동 링크 -->
+    <title>하나은행비대면</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+
+    
+</head>
+
+<body>
+<!-- wrap-->
+<div id="wrap">
+    <!-- header -->
+    <header id="header">헤더영역</header>
+    <!-- // header -->
+
+    <!-- container -->
+    <div id="container">
+        <div id="contents">
+            <!-- 컨텐츠 영역 -->
+            <div class="reqeust-wrap">
+                
+                <!-- 상단 텍스트 -->
+                <div class="top-txt-area01">
+                    <p class="txt-type01">비밀번호를<span>다시 한번 입력하세요.</span></p>
+                </div>
+                <!-- // 상단 텍스트 -->
+
+                <!-- 계좌 비밀번호(4자리) : 스크래핑 실패 시 -->
+                <div class="bank-pw">
+                    <div class="input-area">                        
+                        <!-- 패스워드 입력 -->
+                        <div class="field error"><!-- 스크래핑 실패 시 error 클래스 추가 -->
+                            <label class="label type02">계좌 비밀번호 확인</label>
+                            <div class="inputFake">
+                                <div class="password">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="btn-wrap">
+                                    <button class="sp-icon btnDel" type="button"><span class="blind">삭제</span></button>
+                                </div>
+                            </div>
+
+                            <!-- 스크래핑 실패 시 -->
+                            <p class="error-txt">계좌 비밀번호는 연속되지 않은 숫자로 입력해 주세요.</p>
+
+                            <!-- 1. 연속된 숫자 입력 시 -->
+                            <p class="error-txt">연속되는 숫자는 비밀번호로 사용할 수 없습니다.</p>
+
+                            <!-- 2. 휴대폰 중간, 뒷자리 번호 포함 시 -->
+                            <p class="error-txt">휴대폰 번호는 계좌 비밀번호에 포함될 수 없습니다.</p>
+
+                            <!-- 3. 주민번호 앞자리, 뒷자리 번호 포함 시 -->
+                            <p class="error-txt">생년월일, 주민등록번호 뒷자리는 계좌 비밀번호에 포함될 수 없습니다.</p>
+                            <!-- //스크래핑 실패 시 -->
+
+                        </div>
+                        <!-- // 패스워드 입력 -->
+                    </div>
+                    <!-- // input-area -->
+                </div>
+                <!-- // 계좌 비밀번호(4자리) : 스크래핑 실패 시 -->
+
+                <div class="chk-option-wrap">
+                    <div class="chk-option">
+                        <input type="checkbox" name="chk-option01" id="chk-option01">
+                        <label for="chk-option01">평생계좌번호를 만들겠습니다.(선택)</label>
+                    </div>
+                    <div class="result-value01">
+                        <p>010-1234-5678</p>
+                    </div>
+                </div>
+                <!-- // chk-option-wrap -->
+
+                <!-- 이용 안내 -->
+                <div class="list-type01">
+                    <p class="list-tit">이용안내</p>
+                    <ul class="list-dot">
+                        <li>비밀번호는 숫자 4자리로 입력하세요.</li>
+                        <li>주민등록번호, 생년월일, 전화번호(휴대폰번호)는 비밀번호로 등록할 수 없습니다.</li>
+                        <li>동일숫자 또는 일련번호는 비밀번호로 등록할 수 없습니다.(ex.1111, 1234)</li>
+                    </ul>
+                </div>
+                <!-- // 이용 안내 -->
+
+                <!-- 버튼 -->
+                <div class="btn-wrap">
+                    <button class="btn" type="button">다음</button>
+                </div>
+                <!-- 버튼 -->
+
+            </div>
+            <!-- // 컨텐츠 영역 -->
+        </div>
+        <!-- // contents -->
+    </div>
+    <!-- // container -->
+
+</div>
+<!-- // wrap -->
+
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common_ui.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+        $(".chk-option input").click(function(){
+            if($(this).is(":checked") == true){
+                $(this).parent().siblings(".sub-box").slideDown();
+            } else {
+                $(this).parent().siblings(".sub-box").slideUp();
+            }
+        });
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>하나은행 모바일 비대면 WEB STYLE GUIDE</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <!-- <link rel="stylesheet" href="../../css/common02.css"> -->
+    <link rel="stylesheet" href="docs/guide.css">
+    <link rel="stylesheet" href="docs/prism.css">
+    <script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="docs/prism.js"></script>
+    
+    <script>
+        $(function(){
+            $(".tab_area .list li").click(function(){
+                var idx = $(this).index();
+                $(this).addClass("on").siblings().removeClass("on")
+                $(this).parent().next().children().siblings().removeClass("on")
+                $(this).parent().next().find(".box:eq(" + idx + " ) " ).addClass("on");
+            });
+        })
+
+    </script>
+    <style>
+        .toolbar {display:none;}
+        .component {width:100%; height:1000px; border:0}}
+    </style>
+</head>
+
+<body class="guide_wrap">
+
+<!-- Header -->
+<header class="guide_header">
+    <h1>하나은행 모바일 비대면 서비스 : WEB STYLE GUIDE</h1>
+</header>
+<!-- //Header -->
+<!-- 본문 내용 -->
+<div class="guide_container">
+    <h2>웹 스타일 가이드 정의</h2>
+    <div class="box_content">
+        본 가이드는 <span class="underline">HTML마크업</span>을 진행하는 프론트 개발자 들을 대상으로 하며, 프로젝트의 원활한 진행을 위하여 작업을 진행하면서 사용 될 수 있는 내용을 정의 한다.<br />
+        가이드에서 다루는 내용은 <span class="underline">HTML, CSS, IMAGE, JS</span> 등의 공통된 내용 및 <span class="underline">ISSUE</span> 사항을 다루며 향후 웹사이트의 디자인 관리 및 사이트 유지보수 개발의 지침서로서 배포하여 활용하는 데 그 목적이 있다.
+        개발자는 배포받은 가이드를 준수하여 <span class="underline">HTML마크업</span> 을 진행하며 <span class="underline">ISSUE</span> 사항이 발생하면 수정 및 프론트 개발자 에게 재배포를 원칙으로 한다.
+    </div>
+    <div class="tab_area">
+        <!--- 메뉴 -->
+        <ul class="list">
+            <li class="on"><a href="#none">기본 GUIDE 정의</a></li>
+            <li><a href="#none">네이밍 정의</a></li>
+            <li><a href="#none">Front Guide</a></li>
+            <li><a href="#none">Works List</a></li>
+            <li><a href="#none">ETC</a></li>
+        </ul>
+        <!--- // 메뉴 -->
+        <div class="box_area">
+            <!-- 내용 1 -->
+            <div class="box on">
+                <h3>HTML 정의</h3>
+                <div class="box_content type2">
+                    신규 페이지 생성시 DOCTYPE은 HTML5이며, 파일<span class="underline font_color01"> 인코딩은 UTF-8</span>로 생성한다.<br />
+                    페이지 생성 및 유지보수 진행시 하단 코드를 참고하여 진행한다.<br />
+                    추가되는 <span class="underline">css</span>는 <span class="underline">common.css</span> 하단에 추가되는 해당 매뉴의 <span class="underline">css</span> 를 위치하며,
+                    <span class="underline">javascript</span>파일은 <span class="underline">css</span> 보다 하단에 위치한다.
+                </div>
+<!-- 코드 삽입 -->
+<pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;LAS : WEB STYLE GUIDE &lt;/title&gt;
+    &lt;link rel="stylesheet" href="../../css/common.css"&gt;
+    &lt;script type="text/javascript" src="../../js/jquery-3.4.1.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="../../js/common_ui.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body class=""&gt;&lt;!-- 카테고리별 class를 body에 삽입한다. --&gt;
+&lt;div id="wrap"&gt;
+    &lt;header id="header"&gt;&lt;/header&gt;
+    &lt;main id="wrap"&gt;&lt;/main&gt;
+    &lt;footer id="footer"&gt;&lt;/footer&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<!-- 코드 삽입 -->
+                <h3>CSS 정의</h3>
+                <div class="gtxt-box">
+                    <span class="underline">CSS는 </span> common.css 파일에 <span class="underline">@import url(name.css)</span> 호출을 한 후 <span class="underline">프로젝트 최종 종료시 common.css</span>  파일에 취합한다.<br>
+                    <span class="underline">Library</span>의 경우 <span class="underline">common.css 파일보다 위에</span> 위치한다.
+                </div>
+<!-- 코드 삽입 -->
+<pre class="language-html"><code>&lt;link rel="stylesheet" href="../../css/library.css"&gt;&lt;!--  해당하는 Library CSS 위치 --&gt;
+&lt;link rel="stylesheet" href="../../css/common.css"&gt;
+</code></pre>
+<!-- 코드 삽입 -->
+                <h3>javascript 정의</h3>
+                <div class="gtxt-box">UI 스크립트는 <span class="underline">common_ui.js</span> 파일에 작성하며, 라이브러리 사용의 경우 <span class="underline">library.js</span>해당 파일을 다운로드하여 삽입하여 사용한다.</div>
+<!-- 코드 삽입 -->
+<pre class="language-html"><code>&lt;script type="text/javascript" src="../../js/library.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="../../js/common_ui.js"&gt;&lt;/script&gt;
+</code></pre>
+<!-- 코드 삽입 -->
+                <h3>주석처리</h3>
+                <div class="gtxt-box">
+                    <span class="underline">마크업</span>진행시 주석처리 정의 : 주석은 HTML 작업시 해당 section 구분마다 주석처리를 해주며, <span class="underline">수정및 ISSUE</span>발생시 주석처리를 한다.<br />
+                    <span class="underline">개발에 전달 해야할 ISSUE 혹은 수정시 </span> 발생시 <span class="underline">Develop 약자인 [D] 의 약자</span> 로 해당하는 부분에 내용과 시작 종료일자를 함께 작성 한다.
+                </div>
+<!-- 코드 삽입 -->
+<pre class="language-html"><code>HTML 기본 주석
+&lt;!-- 주석 시작 --&gt;
+&lt;!-- // 주석 시작 --&gt;
+&lt;!-- [D] 2019-XX-XX 수정내용 --&gt;
+&lt;!-- // [D] 2019-XX-XX 수정내용 --&gt;
+</code></pre>
+<!-- 코드 삽입 -->
+                <div class="gtxt-box">
+                    <span class="underline">CSS 주석 문구</span> 작성시 마크업진행시 해당 메뉴의 네임을 작성하고, 종료 주석처리는 진행하지 않는다. <br />단, 이미진행이 된 부분의 CSS의 경우 수정날자를 기입한다.
+                </div>
+<pre class="language-css"><code>CSS 기본 주석
+/* 메뉴 네임 */
+/* 메뉴 2019-XX-XX 수정 */
+</code></pre>
+<!-- 코드 삽입 -->  
+            </div>
+            <!-- // 내용 1 -->
+            <!-- 내용 2 -->
+            <div class="box">
+                <h3>네임 정의</h3>
+                <div class="box_content type2">
+                    <span class="underline ">사전에 예약어로 사용되는 네임을 제외한</span> HTML 네임은 개발자의 기준으로 선정하며 <span class="underline">언더스코어" _ "</span> 가 아닌 <span class="underline">하이픈" - "</span>으로 정의 하여 지정하며, <span class="underline">IMAGE는 언더스코어" _ "</span>로 정의 한다.<br />
+                    <span class="underline">하이픈" - "</span>는 2개 이상의 단어를 조합할때만 사용하며, 그이상의 단어 조삽시 최초 <span class="underline">하이픈" - "</span> 그 뒤에 단어는 <span class="underline">Camel 기법(낙타)</span>으로 진행한다.
+                </div>
+<!-- 코드 삽입 -->
+<pre class="language-html"><code>네이밍 사용 예시
+&lt;div class="guide-container"&gt;
+&lt;div class="guide-contentBox"&gt;
+&lt;img src="images_images" alt="이미지"&gt;
+</code></pre>
+<!-- 코드 삽입 -->
+                <h3>예약어 정의</h3>
+                <div class="gtxt-box"><p>예약어1 : <span class="font_color01"> 하단의 class는 해당 메뉴Body에 사용되는 class로 사용을 금지한다.</span></p></div>
+<!-- 코드 삽입 -->
+<pre class="language-html"><code>예약어1
+&lt;body class="main"&gt; 메인
+</code></pre>
+<!-- 코드 삽입 -->                   
+                <div class="gtxt-box"><p>예약어2 : <span class="font_color01"> 하단의 class는 화면 레이아웃의 class로 사용을 금지한다</span></p></div>
+<!-- 코드 삽입 -->
+<pre class="language-html"><code>예약어2
+&lt;div id="wrap"&gt;
+&lt;header id="header"&gt;
+&lt;main id="wrap"&gt;
+&lt;footer id="footer"&gt;
+</code></pre>
+<!-- 코드 삽입 -->
+            </div>
+            <!-- // 내용 2 -->
+            <!-- 내용 3 -->
+            <div class="box">
+                <iframe src="component.html" class="component"></iframe>
+            </div>
+            
+            <!-- // 내용 3 -->
+            
+            <!-- 내용 4 -->
+            <div class="box">
+                <!-- 코딩 리스트 -->
+                <iframe src="../../index.html" class="iframe"></iframe>
+                <!-- // 코딩 리스트 -->
+            </div>
+            <!-- // 내용 4 -->
+            <!-- 내용 5 -->
+            <div class="box">
+                <h3>Devices 검수</h3>
+                <div class="box_content type2">
+                    <span class="underline ">Devices 검수</span>는 제공되는 Devices를 대상으로 검수를 진행하도록 하며, 그 이외의 미제공 되는 Devices의 경우 브라우저에서 제공되는 해상도를 포함하여 검수진행한다.
+                    <!-- 사파리 브라우저 2012년 08월 21일자로 윈도우 지원 중단 -->
+                </div>
+                <h3>기본폴더 구조</h3>
+                <div class="example box_content type2">
+                    <span class="underline">폴더구조</span>는 별도 협의된 구조가 없는 관계로 아래의 폴더구조로 제작되었으며, 필요시<span class="underline"> 변경 및 추가 </span>될 수 있있다.
+                </div>
+                
+              
+                <div class="example box_content type3">
+                    <ul class="jqueryFileTree">
+                        <li class="directory">
+                            Front
+                            <ul class="jqueryFileTree">
+                                <li class="directory">
+                                    css
+                                    <ul class="jqueryFileTree">
+                                        <ul class="jqueryFileTree">
+                                            <li class="file ext_txt">Library.css</li>
+                                            <li class="file ext_txt">importFont.css</li>
+                                            <li class="file ext_txt">reset.css</li>
+                                            <li class="file ext_txt">common.css</li>
+                                        </ul>
+                                    </ul>
+                                </li>
+                                <li class="directory nth-child-2">
+                                    html
+                                    <ul class="jqueryFileTree">
+                                        <li class="directory">guide</li>
+                                        <li class="file ext_txt">file.html</li>
+                                    </ul>
+                                </li>
+                                <li class="directory nth-child-2">
+                                    images
+                                </li>
+                                <li class="directory nth-child-3 last-child">js
+                                    <ul class="jqueryFileTree">
+                                        <li class="file ext_txt">Library.js</li>
+                                        <li class="file ext_txt">jquery-3.4.1.min.js</li>
+                                        <li class="file ext_txt">common_ui.js</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- // 내용 5 -->
+        </div>
+    </div>
+    
+</div>
+<!-- // 본문 내용 -->
+<!-- Footer -->
+<footer>
+    
+</footer>
+<!-- //Footer -->
+
+
+</body>
+</html>

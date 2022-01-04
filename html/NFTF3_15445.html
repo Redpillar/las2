@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAS</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+</head>
+
+<body>
+<!-- wrap-->
+<div id="wrap">
+    <!-- header -->
+    <header id="header">헤더영역</header>
+    <!-- // header -->
+
+    <!-- container -->
+    <div id="container">
+        <div id="contents">
+            <!-- 컨텐츠 영역 -->
+            <div class="electronic-wrap">
+
+                <div class="top-txt-area01">
+                    <p class="txt-type01">폰뱅킹에서 사용할<span>전화번호를 지정하시겠어요?</span></p>
+                </div>
+
+                <div class="electronic-cont">
+
+                    <!-- 라디오 선택 영역 -->
+                    <div class="togg-box">
+
+                        <div class="rdobox-wrap">
+        
+                            <div class="rdobox01">
+                                <input type="radio" id="rdobox01" name="rdobox01"><label for="rdobox01">예, 전화번호를 지정할게요.</label>
+                            </div>
+
+                            <div class="togg-cont">
+                                <!-- 입력 영역 -->
+                                <div class="input-area">
+                                    <div class="field">
+                                        <label class="label" for="name01">폰뱅킹 지정 전화번호</label>
+                                        <div class="input">
+                                            <input class="" id="name01" type="text" placeholder="폰뱅킹 지정 전화번호">
+                                            <div class="btn-wrap">
+                                                <button class="sp-icon btnDel" type="button"><span class="blind">삭제</span></button>
+                                            </div>
+                                        </div>
+
+                                        <!-- 스크래핑 실패 시 -->
+                                        <p class="error-txt">이미 등록되어 있는 번호입니다.</p>
+                                        <!-- // 스크래핑 실패 시 -->
+                                        
+                                    </div>
+                                </div>
+                                <!-- // 입력 영역 -->
+                            </div>
+
+                        </div>
+                        
+                        <div class="rdobox-wrap">
+
+                            <div class="rdobox01">
+                                <input type="radio" id="rdobox02" name="rdobox01">
+                                <label for="rdobox02">아니오, 지정하지 않을게요.</label> 
+                            </div>
+                            
+                        </div>
+                        <!-- // rdobox-wrap -->
+                        <!-- // 선택 영역 -->
+
+                    </div>
+                </div>
+                <!-- // electronic-cont -->
+
+            </div>
+            <!-- // info-wrap -->
+            <!-- // 컨텐츠 영역 -->
+        </div>
+        <!-- // contents -->
+        
+    </div>
+    <!-- container -->
+
+    <!-- 버튼 영역 -->
+
+    <!-- // 버튼 영역 -->
+</div>
+<!-- wrap -->
+
+<!-- 스크립트 영역 -->
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common_ui.js"></script>
+<script>
+    $(document).ready(function(){
+
+       // 라디오 togg
+       $(".togg-box .rdobox-wrap .rdobox01 input").click(function(){
+            var togg =  $(this).parent().next();
+            if($(this).is(":checked") == true ){
+                togg.slideDown();
+                togg.parent().siblings().find(".togg-cont").slideUp();
+                $(this).parents(".rdobox-wrap").siblings().find(".togg-cont").slideUp();
+                
+            }else{
+                togg.slideUp();
+                togg.parent().siblings().find(".togg-cont").slideDown();
+            }
+        });
+
+    });
+</script>
+</body>
+</html>

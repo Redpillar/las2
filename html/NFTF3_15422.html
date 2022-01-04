@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/><!-- 익스 플로러 전화번호 자동 링크 -->
+    <title>하나은행비대면</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+
+    
+</head>
+
+<body>
+<!-- wrap-->
+<div id="wrap">
+    <!-- header -->
+    <header id="header">헤더영역</header>
+    <!-- // header -->
+
+    <!-- container -->
+    <div id="container">
+        <div id="contents">
+            <!-- 컨텐츠 영역 -->
+            <button type="button" class="openBtn" data-popup="#popup01">보유otp없음 팝업</button><br>
+            <a href="javascript:;" class="openBtn" data-popup="#popup01">보유otp없음 팝업</a><br><br>
+            <button type="button" class="openBtn" data-popup="#popup02">재발급 팝업</button><br>
+            <a href="javascript:;" class="openBtn" data-popup="#popup02">재발급 팝업</a>
+            <!-- // 컨텐츠 영역 -->
+        </div>
+        <!-- // contents -->
+    </div>
+    <!-- container -->
+
+</div>
+<!-- wrap -->
+
+<!-- 보유otp없음 팝업 -->
+<div class="popup-area" id="popup01">
+    <div class="popup">
+        <!-- 컨텐츠 -->
+        <div class="content">
+            <p class="pop-txt01">보유하고 계신 OTP가 없습니다. 다른 보안매체를 선택해주세요.</p>
+        </div>
+        <!-- // 컨텐츠 -->
+
+        <!-- 버튼 -->
+        <div class="pop-btnwrap"> 
+            <button type="button" class="btn-pop colorBlue">확인</button>    
+        </div>
+        <!-- // 버튼 -->
+
+    </div>
+    <!-- // popup -->
+    <div class="dummyDimmy"></div>
+</div>
+<!-- // 보유otp없음 팝업 -->
+
+<!-- 재발급 팝업 -->
+<div class="popup-area" id="popup02">
+        <div class="popup">
+            <!-- 컨텐츠 -->
+            <div class="content">
+                <p class="pop-txt01">기존 보안매체가 사고신고 상태여서 영업점을 통한 재발급만 가능합니다. 가까운 영업점을 이용해 주세요.</p>
+            </div>
+            <!-- // 컨텐츠 -->
+    
+            <!-- 버튼 -->
+            <div class="pop-btnwrap"> 
+                <button type="button" class="btn-pop colorBlue">확인</button>    
+            </div>
+            <!-- // 버튼 -->
+    
+        </div>
+        <!-- // popup -->
+        <div class="dummyDimmy"></div>
+    </div>
+    <!-- // 재발급 팝업 -->
+
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common_ui.js"></script>
+
+</body>
+</html>

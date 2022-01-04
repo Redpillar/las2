@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAS</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+</head>
+
+<body>
+<!-- wrap-->
+<div id="wrap">
+    <!-- header -->
+    <header id="header">헤더영역</header>
+    <!-- // header -->
+
+    <!-- container -->
+    <div id="container">
+        <div id="contents">
+            <!-- 컨텐츠 영역 -->
+            <div class="info-wrap">
+
+                <div class="top-txt-area01">
+                    <p class="txt-type01">일하시는 곳에 대해<span>알려주세요 :)</span></p>
+                </div>
+
+                <div class="info-cont">
+
+                    <div class="link-box-wrap main-add">
+                        <a href="javascript:;" class="link-box" title="주소선택 팝업 이동"><span class="sp-icon-a">직장(사업장) 주소</span></a>
+                    </div>
+<!-- 입력 받은 주소
+                    <div class="link-box-wrap main-add receive">
+                        <p class="tit">직장(사업장) 주소</p>
+                        <a href="javascript:;" class="link-box" title="주소선택 팝업 이동"><span class="sp-icon-a">서울 서초구 동작대로 216</span></a>
+                    </div>
+-->
+                    <div class="sub-add">
+                        <div class="input-area no-margin">
+                            <div class="field">
+                                <div class="input">
+                                    <input class="" id="name01" type="text" data-text="나머지 주소" placeholder="나머지 주소" />
+                                    <div class="btn-wrap">
+                                        <button class="sp-icon btnDel" type="button"><span class="blind">삭제</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-job-num">
+                        <!-- 입력 영역 -->
+                        <div class="input-area">
+                            <div class="field">
+                                <label class="label" for="name03">직장(사업장) 전화</label>
+                                <div class="input inputFake tel">
+                                    <button id="" class="selectBtn sp-icon-a">지역번호</button>
+                                    <input class="" id="name03" type="text" data-text="직장(사업장) 전화" placeholder="직장(사업장) 전화" />
+                                    <div class="btn-wrap">
+                                        <button class="sp-icon btnDel" type="button"><span class="blind">삭제</span></button>
+                                    </div>
+                                </div>
+
+                                <!-- 스크래핑 실패시 : 에러문구  -->
+                                <p class="error-txt">에러메시지</p>
+                                <!-- // 스크래핑 실패시 : 에러문구  -->
+                            </div>
+                        </div>
+                        <!-- // 입력 영역 -->
+                    </div>
+
+                </div>
+                <!-- // info-address -->
+
+            </div>
+            <!-- // info-wrap -->
+            <!-- // 컨텐츠 영역 -->
+        </div>
+        <!-- // contents -->
+        
+    </div>
+    <!-- container -->
+
+    <!-- 버튼 영역 -->
+
+    <!-- // 버튼 영역 -->
+
+</div>
+<!-- wrap -->
+
+<!-- 팝업 -->
+<div id="open-popup">
+    <div class="field-wrap">
+        <div class="field-area">
+            <div class="title">지역번호를 선택해주세요.</div>
+            <!-- 지역번호 선택 리스트 -->
+            <div class="field">
+                <ul>
+                    <li>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">02</div>
+                                <div class="swiper-slide">031</div>
+                                <div class="swiper-slide">032</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- // 지역번호 선택 리스트 -->
+            <div class="btn-area">
+                <button class="btnClose" type="button">선택</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="dummyDimmy"></div>
+</div>
+<!-- // 팝업 -->
+
+<!-- 스크립트 영역 -->
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common_ui.js"></script>
+<!-- 스크립트 영역 -->
+
+<script>
+    $(document).ready(function(){
+
+        $(".chk-option input").click(function(){
+            if($(this).is(":checked") == true){
+                $(this).parent().siblings(".sub-box").slideDown();
+            } else {
+                $(this).parent().siblings(".sub-box").slideUp();
+            }
+        });
+
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/><!-- 익스 플로러 전화번호 자동 링크 -->
+    <title>하나은행비대면</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+
+    
+</head>
+
+<body>
+<!-- wrap-->
+<div id="wrap">
+    <!-- header -->
+    <header id="header">헤더영역</header>
+    <!-- // header -->
+
+    <!-- container -->
+    <div id="container">
+        <div id="contents">
+            <!-- 컨텐츠 영역 -->
+            <div class="reqeust-wrap">
+                
+                <!-- 상단 텍스트 -->
+                <div class="top-txt-area01">
+                    <p class="txt-type01">전자금융 출금계좌로<span>등록하실래요?</span></p>
+                </div>
+                <!-- // 상단 텍스트 -->
+
+                <!-- 라디오 선택 영역 -->
+                <div class="select-area01 togg-box">
+                    <div class="rdobox-wrap">
+
+                        <div class="rdobox01">
+                            <input type="radio" id="rdobox01" name="rdobox01">
+                            <label for="rdobox01">예, 등록할게요.</label> 
+                        </div>
+
+                        <div class="togg-cont">
+                            <!-- 입력 영역 -->
+                            <div class="chkbox-wrap">
+                                <div class="chkbox03">
+                                    <input type="checkbox" id="chkbox01" name="chkbox01">
+                                    <label for="chkbox01">개인뱅킹(스마트폰/인터넷 뱅킹)에 등록합니다.</label>
+                                </div>
+
+                                <div class="chkbox03">
+                                    <input type="checkbox" id="chkbox02" name="chkbox02">
+                                    <label for="chkbox02">폰 뱅킹에 등록합니다.</label>
+                                </div>
+                            </div>
+                            
+
+                            <!-- <div class="input-area no-margin">
+                                <div class="field">
+                                    <div class="input">
+                                        <input class="" id="name01" type="text" placeholder="사용자 ID">
+                                        <div class="btn-wrap">
+                                            <button class="sp-icon btnDel" type="button"><span class="blind">삭제</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- // 입력 영역 -->
+                        </div>
+                        <!-- // togg-cont -->
+                    </div>
+                    <!-- // rdobox-wrap -->
+
+                    <div class="rdobox-wrap">
+                        <div class="rdobox01">
+                            <input type="radio" id="rdobox02" name="rdobox01">
+                            <label for="rdobox02">아니오, 등록하지 않을게요.</label> 
+                        </div>
+                    </div>
+                    <!-- // rdobox-wrap -->
+                    
+                </div>
+                <!-- // 라디오 선택 영역 -->
+
+                <!-- 버튼 -->
+                <div class="btn-wrap">
+                    <button class="btn" type="button">다음</button>
+                </div>
+                <!-- 버튼 -->
+
+            </div>
+            <!-- // 컨텐츠 영역 -->
+        </div>
+        <!-- // contents -->
+    </div>
+    <!-- // container -->
+
+</div>
+<!-- // wrap -->
+
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common_ui.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+         // 라디오 togg
+       $(".togg-box .rdobox-wrap .rdobox01 input").click(function(){
+            var togg =  $(this).parent().next();
+            if($(this).is(":checked") == true ){
+                togg.slideDown();
+                togg.parent().siblings().find(".togg-cont").slideUp();
+                $(this).parents(".rdobox-wrap").siblings().find(".togg-cont").slideUp();
+                
+            }else{
+                togg.slideUp();
+                togg.parent().siblings().find(".togg-cont").slideDown();
+            }
+        })
+
+    });
+</script>
+</body>
+</html>

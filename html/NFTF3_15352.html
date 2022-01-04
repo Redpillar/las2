@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAS</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+</head>
+
+<body>
+<!-- wrap-->
+<div id="wrap">
+    <!-- header -->
+    <header id="header">
+        <!-- 상단 네비게이터 -->
+        <div id="" class="navigator"><!-- inputAction 아이디 추가시 애니작동 -->
+            <button type="button" class="prev sp-icon-a"><span>뒤로가기</span></button>
+            <div class="list">
+                <ul>
+                    <li>동의</li>
+                    <li>기본</li>
+                    <li class="on">신청서</li>
+                    <li>인증</li>
+                </ul>
+            </div>
+            <button type="button" class="menu sp-icon-a"><span>메뉴</span></button>
+        </div>
+        <!-- // 상단 네비게이터 -->
+    </header>
+    <!-- // header -->
+
+    <!-- container -->
+    <div id="container">
+        <div id="contents">
+            <!-- 컨텐츠 영역 -->
+            <div class="agree-wrap">
+                <div class="top-txt-area01">
+                    <p class="txt-type01">이체할 금액은<span>얼마로 하실래요?</span></p>
+                </div>
+                <div class="sel-area01">
+                    <!-- 금액 -->
+                    <div class="input-area">
+                        <!-- 인풋박스 -->
+                        <div class="field"><!-- [D] 클래스 error ]-->
+                            <label class="label" for="name01">신규가입금액</label>
+                            <div class="input">
+                                <input class="money" id="name01" type="text" data-text="" placeholder="신규가입금액" />
+                                <div class="sum-wrap">
+                                    <strong>원</strong>
+                                </div>
+                            </div>
+                            <!-- [D] 오류 메세지 -->
+                            <!-- <p class="error-txt">가입금액은 1만원 이상으로 입력하셔야 합니다.</p> -->
+                            <p class="info-txt">* 2만원 이상, 50만원 이하로 가입할 수 있습니다.</p>
+                            <!-- // [D] 오류 메세지 -->
+                        </div>
+                        <!-- // 인풋박스 -->
+                    </div>
+                    <!-- // 금액 -->
+                    <div class="btn-wrap">
+                        <div class="btn-list">
+                            <button class="btn-small-type01">+1만원</button>
+                            <button class="btn-small-type01">+5만원</button>
+                            <button class="btn-small-type01">+10만원</button>
+                            <button class="btn-small-type01">정정</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- //  step-top01 -->
+                <div class="list-type01">
+                    <p class="list-tit">유의사항</p>
+                    <ul class="list-dot">
+                        <li>월별 자동이체 금액은 최대 500만원 이내로(1천원이상) 지정 가능합니다.</li>
+                        <li>자동이체계좌는 신규가입 시 선택한 출금계좌로 지정됩니다.</li>
+                        <li>계약기간 2/3 경과 후 기 적립잔액의 ½초과 입금은 불가합니다.</li>
+                    </ul>
+                </div>
+                <!-- 버튼 -->
+                <div class="btn-wrap">
+                    <button class="btn" type="button">다음</button>
+                </div>
+                <!-- 버튼 -->
+
+            </div>
+            <!-- // 컨텐츠 영역 -->
+        </div>
+        <!-- // contents -->
+
+    </div>
+    <!-- container -->
+
+    <!-- 버튼 영역 -->
+
+    <!-- // 버튼 영역 -->
+</div>
+<!-- wrap -->
+<!-- 셀렉트 팝업 -->
+<div id="open-popup">
+    <!-- 셀렉트 팝업 -->
+    <div class="field-wrap">
+        <div class="field-area">
+            <div class="title">출금 계좌를 선택하세요.</div>
+            <!-- 컨텐츠 내용 -->
+            <div class="field">
+                <ul>
+                    <li>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">101-123456-11111</div>
+                                <div class="swiper-slide">101-123456-11111</div>
+                                <div class="swiper-slide">101-123456-11111</div>
+                                <div class="swiper-slide">101-123456-11111</div>
+                                <div class="swiper-slide">101-123456-11111</div>
+                                <div class="swiper-slide">101-123456-11111</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- // 컨텐츠 내용 -->
+            <div class="btn-area">
+                <button class="btnClose" type="button">선택</button>
+            </div>
+        </div>
+    </div>
+    <!-- // 셀렉트 팝업 -->
+    <!-- 딤드 -->
+    <div class="dummyDimmy"></div>
+    <!-- // 딤드 -->
+</div>
+<!-- 스크립트 영역 -->
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common_ui.js"></script>
+<!-- 스크립트 영역 -->
+
+</body>
+</html>

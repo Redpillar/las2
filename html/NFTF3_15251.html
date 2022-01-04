@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAS</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+</head>
+
+<body>
+<!-- wrap-->
+<div id="wrap">
+    <!-- header -->
+    <header id="header">
+        <!-- 상단 네비게이터 -->
+        <div id="" class="navigator"><!-- inputAction 아이디 추가시 애니작동 -->
+            <button type="button" class="prev sp-icon-a"><span>뒤로가기</span></button>
+            <div class="list">
+                <ul>
+                    <li>동의</li>
+                    <li>기본</li>
+                    <li class="on">신청서</li>
+                    <li>인증</li>
+                </ul>
+            </div>
+            <button type="button" class="menu sp-icon-a"><span>메뉴</span></button>
+        </div>
+        <!-- // 상단 네비게이터 -->
+    </header>
+    <!-- // header -->
+
+    <!-- container -->
+    <div id="container">
+        <div id="contents">
+            <!-- 컨텐츠 영역 -->
+            <div class="agree-wrap">
+                <div class="top-txt-area01">
+                    <p class="txt-type01">이자는 어떻게<span>지급해드릴까요?</span></p>
+                </div>
+                <div class="sel-area01">
+                    <div id="textAction" class="rdobox-wrap"><!-- id 값 textAction 추가시 하단의 txt 출력 없을시 txt값 제거 -->
+                        <div class="rdobox01">
+                            <input type="radio" id="rdobox01" name="rdobox01"><label for="rdobox01">만기 시 자동으로 해지합니다.</label>
+                        </div>
+                        <p class="txt">신규 가입하는 입출금통장으로 입금됨</p>
+                        <div class="rdobox01">
+                            <input type="radio" id="rdobox02" name="rdobox01"><label for="rdobox02">직접 해지를 하겠습니다.</label>
+                        </div>
+                        <!-- <p class="txt">신규 가입하는 입출금통장으로 입금됨</p> -->
+                    </div>
+                </div>
+                <!-- //  step-top01 -->
+                <div class="list-type01">
+                    <p class="list-tit">이용안내</p>
+                    <ul class="list-dot">
+                        <li>직접해지<br>예금 계약기간 만료 후 손님이 직접 해지 신청을 해야만 원리금이 예금 가입 시 출금계좌로 입금됩니다.(미해지 기간 동안 이율은 만기 후 이율이 적용되며, 본인인증을 거친 후 해지가 됩니다.)</li>
+                        <li>만기 시 자동해지<br>예금 계약기간 만료 시 원리금이 자동 해지되어 예금 가입 시 출금계좌로 자동 입금처리 됩니다.</li>
+                    </ul>
+                </div>
+                <!-- 버튼 -->
+                <div class="btn-wrap">
+                    <button class="btn" type="button">다음</button>
+                </div>
+                <!-- 버튼 -->
+
+            </div>
+            <!-- // 컨텐츠 영역 -->
+        </div>
+        <!-- // contents -->
+
+    </div>
+    <!-- container -->
+
+    <!-- 버튼 영역 -->
+
+    <!-- // 버튼 영역 -->
+</div>
+<!-- wrap -->
+<!-- 셀렉트 팝업 -->
+<div id="open-popup">
+    <!-- 셀렉트 팝업 -->
+    <div class="field-wrap">
+        <div class="field-area">
+            <div class="title">출금 계좌를 선택하세요.</div>
+            <!-- 컨텐츠 내용 -->
+            <div class="field">
+                <ul>
+                    <li>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">101-123456-11111</div>
+                                <div class="swiper-slide">101-123456-11111</div>
+                                <div class="swiper-slide">101-123456-11111</div>
+                                <div class="swiper-slide">101-123456-11111</div>
+                                <div class="swiper-slide">101-123456-11111</div>
+                                <div class="swiper-slide">101-123456-11111</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- // 컨텐츠 내용 -->
+            <div class="btn-area">
+                <button class="btnClose" type="button">선택</button>
+            </div>
+        </div>
+    </div>
+    <!-- // 셀렉트 팝업 -->
+    <!-- 딤드 -->
+    <div class="dummyDimmy"></div>
+    <!-- // 딤드 -->
+</div>
+<!-- 스크립트 영역 -->
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common_ui.js"></script>
+<!-- 스크립트 영역 -->
+
+</body>
+</html>

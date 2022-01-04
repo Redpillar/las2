@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> -->
+    <meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no"/><!-- 익스 플로러 전화번호 자동 링크 -->
+    <title>하나은행비대면</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function(){
+            $('input').on('click', function(){
+                $('.fake').focus();
+            })
+        })
+    </script>
+    <style>
+    
+    /* .test-btn {border:1px solid red;} */
+    .test-btn {position: absolute;; left:0; right:0; bottom:0;}
+    .fake {width:100%; height:100%; background:red !important;}
+    
+    </style>
+
+</head>
+
+<body>
+    <div class="accessibility">
+        <a href="#main">본문 바로가기</a>
+    </div>
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        <header id="header">
+            header
+        </header>
+        <!-- /header -->
+        <!-- main -->
+        <main id="main">
+            <!-- 인풋 테스트 -->
+            <section class="section">
+                <section id="inputAction" class="input-area">
+                    <article class="field"><!-- [D] 클래스 error ]-->
+                        <label class="label" for="name01">타이틀입니다.</label>
+                        <div class="input">
+                            <input class="" id="name01" type="text" placeholder="라벨테스트" />
+                            <button class="sp-icon btnDel" type="button"><span class="blind">삭제</span></button>
+                        </div>
+                        <!-- [D] 오류 메세지 -->
+                        <p class="error-txt">Caption</p>
+                        <!-- // [D] 오류 메세지 -->
+                    </article>
+                </section>
+            </section>
+            <!-- // 인풋 테스트 -->
+
+            <!-- 버튼 테스트 -->
+            <section class="test-btn">
+                <input type="text" class="fake">
+                <!-- <button class="btn" type="button"><span><span></span></span>버튼 테스트</button> -->
+            </section>
+            <!-- 버튼 테스트 -->
+        </main>
+        
+    </div>
+    <!-- // wrap -->
+    
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/common_ui.js"></script>
+    
+</body>
+</html>

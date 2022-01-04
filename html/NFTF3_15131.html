@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/><!-- 익스 플로러 전화번호 자동 링크 -->
+    <title>하나은행비대면</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+
+    
+</head>
+
+<body>
+<!-- wrap-->
+<div id="wrap">
+    <!-- header -->
+    <header id="header">헤더영역</header>
+    <!-- // header -->
+
+    <!-- container -->
+    <div id="container">
+        <div id="contents">
+            <!-- 컨텐츠 영역 -->
+            <div class="reqeust-wrap">
+                
+                <!-- 상단 텍스트 -->
+                <div class="top-txt-area01">
+                    <p class="txt-type01">안전하게 비밀번호를<span>설정해주세요.</span></p>
+                </div>
+                <!-- // 상단 텍스트 -->
+
+                <!-- 계좌 비밀번호(4자리)-->
+                <div class="bank-pw">
+                    <div class="input-area">                        
+                        <!-- 패스워드 입력 -->
+                        <div class="field">
+                            <label class="label type02">계좌 비밀번호</label>
+                            <div class="inputFake">
+                                <div class="password">
+                                    <span class="on"></span><!-- 비밀번호 입력 시 : on 클래스 추가 -->
+                                    <span class="on"></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="btn-wrap">
+                                    <button class="sp-icon btnDel" type="button"><span class="blind">삭제</span></button>
+                                </div>
+                            </div>
+                            <!-- 안내 문구 -->
+                            <p class="info-txt">안내 문구 </p>
+                            <!-- // 안내 문구 -->
+                        </div>
+                        <!-- // 패스워드 입력 -->
+                    </div>
+                    <!-- // input-area -->
+                </div>
+                <!-- // 계좌 비밀번호(4자리) -->
+
+                <!-- 이용 안내 -->
+                <div class="list-type01">
+                    <p class="list-tit">이용안내</p>
+                    <ul class="list-dot">
+                        <li>비밀번호는 숫자 4자리로 입력하세요.</li>
+                        <li>주민등록번호, 생년월일, 전화번호(휴대폰번호)는 비밀번호로 등록할 수 없습니다.</li>
+                        <li>동일숫자 또는 일련번호는 비밀번호로 등록할 수 없습니다.(ex.1111, 1234)</li>
+                    </ul>
+                </div>
+                <!-- // 이용 안내 -->
+
+                <!-- 버튼 -->
+                <div class="btn-wrap">
+                    <button class="btn" type="button">다음</button>
+                </div>
+                <!-- 버튼 -->
+
+            </div>
+            <!-- // 컨텐츠 영역 -->
+        </div>
+        <!-- // contents -->
+    </div>
+    <!-- container -->
+
+</div>
+<!-- wrap -->
+
+<!-- 팝업 영역 -->
+<div id="open-popup">
+    <!-- 급여일 선택 -->
+    <div class="field-wrap">
+        <div class="field-area">
+            <div class="title">매월 급여일이 언제인가요?</div>
+
+            <div class="pay-sel-wrap01">
+                <ul>
+                    <li><button class="btn-small-type02">10일</button></li>
+                    <li><button class="btn-small-type02">15일</button></li>
+                    <li><button class="btn-small-type02">30일</button></li>
+                    <li><button class="btn-small-type02">없음</button></li>
+                </ul>
+            </div>
+
+            <!-- 컨텐츠 내용 -->
+            <div class="field">
+                <ul>
+                    <li>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">18일</div>
+                                <div class="swiper-slide">19일</div>
+                                <div class="swiper-slide">20일</div>
+                                <div class="swiper-slide">21일</div>
+                                <div class="swiper-slide">22일</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- // 컨텐츠 내용 -->
+
+            <div class="btn-area">
+                <button class="btnClose" type="button">선택</button>
+            </div>
+        </div>
+    </div>
+    <!-- // 급여일 선택 -->
+
+    <div class="dummyDimmy"></div>
+</div>
+<!-- // 팝업 영역 -->
+
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common_ui.js"></script>
+</body>
+</html>

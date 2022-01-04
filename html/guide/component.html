@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>하나은행 모바일 비대면 WEB STYLE GUIDE</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <!-- <link rel="stylesheet" href="../../css/common02.css"> -->
+    <link rel="stylesheet" href="docs/guide.css">
+    <link rel="stylesheet" href="docs/prism.css">
+    <script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="docs/prism.js"></script>
+
+    <style type="text/css">
+        .toolbar {display:none}
+        .comp-wrap {padding-bottom:100px; margin-bottom:30px; border-bottom:2px dotted #ccc}
+    </style>
+</head>
+
+<body class="guide_wrap">
+    <div class="guide_container">
+
+    
+        <div class="box">
+                
+            <h3>HTML 가이드</h3>
+            <div class="box_content type2">
+                CSS 작성시 HTML의 단독 태그를 사용하지 않도록 한다.
+                <span class="underline type2">잘못 된 예시 : h1 {color:#000}</span><span class="underline">올바른 예시 : .title {color:#000}</span> 예시와 같은 방식으로 CSS를 작성하며, CSS의 Depth는 최소화 하도록 한다.<br>
+                HTML의 작성시 <span class="underline">부모 태그</span>를 만들어서 각 해당별 블럭 속성을 가지게 작성한다.
+            </div>
+
+            <div class="comp-wrap">
+                <!-- 텍스트 기본 정의 -->
+                <h3>텍스트 기본 정의</h3>
+
+                <div class="top-txt-area01">
+                    <p style="font-weight:300">Default : 미지정 시 기본 적용값 {font-weight:300}</span></p>
+                    <p style="font-weight:500">Medium 미디엄 {font-weight:500} </span></p>
+                    <p style="font-weight:700">Bold 볼드 {font-weight:700} </span></p>
+                </div>
+                <!-- // 텍스트 -->
+            </div>
+            <!-- // comp-wrap -->
+
+            <div class="comp-wrap">
+                <!-- 텍스트 -->
+                <h3>상단 텍스트 - Type 01</h3>
+
+                <div class="top-txt-area01">
+                    <p class="txt-type01">개인뱅킹에 사용할<span>보안매체 OTP 이용이 처음이세요?</span></p>
+                </div>
+                <!-- // 텍스트 -->
+
+    <!-- 상단 텍스트 - Type 01 텍스트 코드 삽입 -->
+    <pre class="language-html"><code>상단 텍스트 - Type 01<xmp>
+    <div class="top-txt-area01">
+        <p class="txt-type01">개인뱅킹에 사용할<span>보안매체 OTP 이용이 처음이세요?</span></p>
+    </div></xmp></code>
+    </pre>
+    <!-- // 상단 텍스트 - Type 01 텍스트 코드 삽입 -->
+            </div>
+            <!-- // comp-wrap -->
+            
+            <div class="comp-wrap">
+            <!-- Radio Type 01 -->
+            <h3>Input - Radio Type 01</h3>
+
+            <div class="rdobox-wrap">
+                <div class="rdobox01">
+                    <input type="radio" id="rdobox01" name="rdobox01"><label for="rdobox01">라디오 타입</label>
+                </div>
+                <div class="rdobox01">
+                    <input type="radio" id="rdobox03" name="rdobox01">
+                    <label for="rdobox03">Radio Type 01 - 하위 컨텐츠 있는 경우 : cheked 시 block
+                        <span class="label-cont01 togg">하위 컨텐츠 영역</span>
+                    </label>
+                </div>
+            </div>
+            <!-- // Radio Type 01 -->
+
+<!-- Radio Type 01 코드 삽입 -->
+<pre class="language-html"><code>Input - Radio Type 01<xmp>
+<div class="rdobox-wrap">
+    <div class="rdobox01">
+        <input type="radio" id="rdobox01" name="rdobox01"><label for="rdobox01">Radio Type 01</label>
+    </div>
+    <div class="rdobox01">
+        <input type="radio" id="rdobox02" name="rdobox01">
+        <label for="rdobox02">Radio Type 01 - 하위 컨텐츠 있는 경우
+            <span class="label-cont01">하위 컨텐츠 영역</span>
+        </label> 
+    </div>
+    <div class="rdobox01">
+        <input type="radio" id="rdobox03" name="rdobox01">
+        <label for="rdobox03">Radio Type 01 - 하위 컨텐츠 있는 경우 : cheked 시 block
+            <span class="label-cont01 togg">하위 컨텐츠 영역</span>
+        </label>
+    </div>
+</div></xmp></code>
+</pre>
+<!-- Radio Type 01 코드 삽입 -->
+            </div>
+            <!-- // comp-wrap -->
+            <div class="comp-wrap">
+                <!-- Checkbox Type 01 -->
+                <h3>Input - Checkbox Type 01</h3>
+    
+                <div class="chkbox-wrap">
+                    <div class="chkbox01">
+                        <input type="checkbox" id="chkbox01" name="chkbox01" disabled="disabled"><label for="chkbox01">Checkbox Type 01 - 상세보기</label>
+                        <a href="javascript:;" class="btn-detail01">상세보기</a>
+                    </div>
+                    <div class="chkbox01">
+                        <input type="checkbox" id="chkbox02" name="chkbox01">
+                        <label for="chkbox02">Checkbox Type 01 - 하위 컨텐츠 있는 경우
+                            <span class="label-cont01">하위 컨텐츠 영역</span>
+                        </label> 
+                    </div>
+                    <div class="chkbox01">
+                        <input type="checkbox" id="chkbox03" name="chkbox01">
+                        <label for="chkbox03">Checkbox Type 01 - 하위 컨텐츠 있는 경우 : cheked 시 block
+                            <span class="label-cont01 togg">하위 컨텐츠 영역</span>
+                        </label>
+                    </div>
+                </div>
+                <!-- // Checkbox Type 01 -->
+    
+<!-- Checkbox Type 01 코드 삽입 -->
+<pre class="language-html"><code>Input - Checkbox Type 01<xmp>
+<div class="chkbox-wrap">
+    <div class="chkbox01">
+        <input type="checkbox" id="chkbox01" name="chkbox01" disabled="disabled"><label for="chkbox01">Checkbox Type 01 - 상세보기</label>
+        <a href="javscript:;" class="btn-detail01">상세보기</a>
+    </div>
+    <div class="chkbox01">
+        <input type="checkbox" id="chkbox02" name="chkbox01">
+        <label for="chkbox02">Checkbox Type 01 - 하위 컨텐츠 있는 경우
+            <span class="label-cont01">하위 컨텐츠 영역</span>
+        </label> 
+    </div>
+    <div class="chkbox01">
+        <input type="checkbox" id="chkbox03" name="chkbox01">
+        <label for="chkbox03">Checkbox Type 01 - 하위 컨텐츠 있는 경우 : cheked 시 block
+            <span class="label-cont01 togg">하위 컨텐츠 영역</span>
+        </label>
+    </div>
+</div></xmp></code>
+</pre>
+<!-- Checkbox Type 01 코드 삽입 -->
+            </div>
+            <!-- // comp-wrap -->
+
+            <div class="comp-wrap">
+
+                <h3>List Type 01</h3>
+                
+                <!-- List Type 01 -->
+                <div class="list-type01">
+                    <p class="list-tit">유의사항</p>
+                    <ul class="list-dot">
+                        <li>어두운 바닥에 신분증 앞면이 보이도록 놓아주세요.</li>
+                        <li>가이드 영역에 맞추어 촬영해주세요.</li>
+                        <li>
+                            <p>빛반사에 주의하세요.</p> 
+                            <p>정보 확인이 어렵거나, 훼손 또는 유효하지 않은 신분증은 거절되거나 이후 거래가 제한될 수 있습니다.</p>
+                        </li>
+                        <li>제출 시 주변영역도 포함되니 촬영시 주의해주세요.</li>
+                    </ul>
+                </div>
+                <!-- // List Type 01 -->
+    
+                <!-- List Type 01 -->
+                <!-- <h3>List Type 01</h3>
+
+                <div class="list-wrap">
+                    <div class="list-dot">
+                        <p class="list-tit">이체한도 안내<span>인터넷뱅킹/스마트폰뱅킹/폰뱅킹</span></p>
+                        <ul>
+                            <li>타행OTP : (최대) 5억/1일, 1억/1회 (최대) 5억/1일, 1억/1회 (최대) 5억/1일, 1억/1회</li>
+                            <li>모바일OTP : (최대) 5천만원/1일, 1천만원/1회</li>
+                        </ul>
+                    </div>
+                </div> -->
+                <!-- // List Type 01 -->
+
+<!-- List Type 01 코드 삽입 -->
+<pre class="language-html"><code>List Type 01<xmp>
+<div class="list-type01">
+    <p class="list-tit">유의사항</p>
+    <ul class="list-dot">
+        <li>어두운 바닥에 신분증 앞면이 보이도록 놓아주세요.</li>
+        <li>가이드 영역에 맞추어 촬영해주세요.</li>
+        <li>
+            <p>빛반사에 주의하세요.</p> 
+            <p>정보 확인이 어렵거나, 훼손 또는 유효하지 않은 신분증은 거절되거나 이후 거래가 제한될 수 있습니다.</p>
+        </li>
+        <li>제출 시 주변영역도 포함되니 촬영시 주의해주세요.</li>
+    </ul>
+</div></xmp></code>
+</pre>
+<!-- // List Type 01 코드 삽입 -->
+            </div>
+            <!-- // comp-wrap -->
+
+            <div class="comp-wrap">
+                <!-- Small Type 01 -->
+                <h3>Button - Small Type 01</h3>
+
+                <div class="btn-wrap">
+                    <div class="btn-list">
+                        <button class="btn-small-type01">+1만원</button>
+                        <button class="btn-small-type01">+5만원</button>
+                        <button class="btn-small-type01">+10만원</button>
+                        <button class="btn-small-type01">정정</button>
+                    </div>
+                </div>
+                <!-- // Small Type 01 -->
+
+ <!-- Small Type 01 코드 삽입 -->
+<pre class="language-html"><code>Button - small Type 01<xmp>
+<div class="btn-wrap">
+    <div class="btn-list">
+        <button class="btn-small-type01">+1만원</button>
+        <button class="btn-small-type01">+5만원</button>
+        <button class="btn-small-type01">+10만원</button>
+        <button class="btn-small-type01">정정</button>
+    </div>
+</div></xmp></code>
+</pre>
+<!-- // Small Type 01 코드 삽입 -->
+            </div>
+            <!-- // comp-wrap -->
+
+            <div class="comp-wrap">
+                <!-- Small Type 02 -->
+                <h3>Button - Small Type 02</h3>
+                
+                <div class="btn-wrap">
+                    <button class="btn-small-type02">버튼</button>
+                </div>
+                <!-- // Small Type 02 -->
+
+ <!-- Small Type 02 코드 삽입 -->
+<pre class="language-html"><code>Button - Small Type 02<xmp>
+<div class="btn-wrap">
+    <button class="btn-small-type02">버튼</button>
+</div></xmp></code>
+</pre>
+<!-- // Small Type 02 코드 삽입 -->
+            </div>
+            <!-- // comp-wrap -->
+
+            <div class="comp-wrap">
+                <!-- Small Type 03 -->
+                <h3>Button - Small Type 03</h3>
+                
+                <div class="btn-wrap">
+                    <button class="btn-small-type03">버튼이름</button>
+                </div>
+                <!-- // Small Type 03 -->
+
+ <!-- Small Type 03 코드 삽입 -->
+<pre class="language-html"><code>Button - Small Type 03<xmp>
+<div class="btn-wrap">
+    <button class="btn-small-type03">버튼이름</button>
+</div></xmp></code>
+</pre>
+<!-- // Small Type 03 코드 삽입 -->
+            </div>
+            <!-- // comp-wrap -->
+
+            <div class="comp-wrap">
+                <!-- Small Type 04 -->
+                <h3>Button - Small Type 04</h3>
+                
+                <div class="btn-wrap">
+                    <button class="btn-small-type04 sp-icon-b">버튼명</button>
+                </div>
+                <!-- // Small Type 04 -->
+
+ <!-- Small Type 04 코드 삽입 -->
+<pre class="language-html"><code>Button - Small Type 04<xmp>
+<div class="btn-wrap">
+    <button class="btn-small-type04 sp-icon-b">버튼명</button>
+</div></xmp></code>
+</pre>
+<!-- // Small Type 04 코드 삽입 -->
+            </div>
+            <!-- // comp-wrap -->
+
+            <div class="comp-wrap">
+                <!-- Small Type 05 -->
+                <h3>Button - Small Type 05</h3>
+                
+                <div class="btn-wrap">
+                    <button class="btn-small-type05 sp-icon-b">통화 버튼</button>
+                </div>
+                <!-- // Small Type 05 -->
+
+ <!-- Small Type 05 코드 삽입 -->
+<pre class="language-html"><code>Button - Small Type 05<xmp>
+<div class="btn-wrap">
+    <button class="btn-small-type05 sp-icon-b">통화 버튼</button>
+</div></xmp></code>
+</pre>
+<!-- // Small Type 05 코드 삽입 -->
+            </div>
+            <!-- // comp-wrap -->
+
+            <div class="comp-wrap">
+                <!-- Medium Type 01 -->
+                <h3>Button - Medium Type 01</h3>
+                
+                <div class="btn-wrap">
+                    <div class="btn-medium-type01">
+                        <button>취소</button>
+                        <button class="on">확인</button><!-- 활성화 시 : class = "on" 추가 -->
+                    </div>
+                </div>
+                <!-- // Medium Type 01 -->
+
+ <!-- Medium Type 01 코드 삽입 -->
+<pre class="language-html"><code>Button - Medium Type 01<xmp>
+<div class="btn-wrap">
+    <div class="btn-medium-type01">
+        <button>취소</button>
+        <button class="on">확인</button><!-- 활성화 시 : class = "on" 추가 -->
+    </div>
+</div></xmp></code>
+</pre>
+<!-- // Medium Type 01 코드 삽입 -->
+            </div>
+            <!-- // comp-wrap -->
+
+
+            
+        </div>
+        <!-- // 내용 3 -->
+    </div>
+    
+        
+</body>
+</html>
